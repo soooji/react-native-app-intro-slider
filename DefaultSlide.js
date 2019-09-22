@@ -13,7 +13,7 @@ export default class DefaultSlide extends React.PureComponent {
     return (
       <View style={[styles.mainContent, style]}>
         <Text style={[styles.title, item.titleStyle]}>{item.title}</Text>
-        <Image source={item.image} style={item.imageStyle} />
+        <Image source={item.image} style={item.imageStyle} resizeMode="contain"/>
         <Text style={[styles.text, item.textStyle]}>{item.text}</Text>
       </View>
     );
